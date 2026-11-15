@@ -1,0 +1,37 @@
+{
+  "name": "magpie-kilo2api-auth",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "description": "Kilo Gateway's free models in magpie: no account, no API key, catalog follows Kilo's live isFree flag.",
+  "keywords": [
+    "magpie",
+    "magpie-plugin",
+    "opencode",
+    "opencode-plugin",
+    "kilo",
+    "kilo-gateway",
+    "free-models"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.mjs",
+    "src/"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check index.mjs && node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "magpie": {
+    "name": "Kilo Gateway Free",
+    "summary": {
+      "en": "Kilo Gateway's free models in magpie. No account or API key needed; the catalog follows Kilo's live isFree flag.",
+      "zh": "把 Kilo Gateway 的免费模型接进 magpie。无需账号或 API Key，模型列表跟随 Kilo 实时的 isFree 标记。"
+    },
+    "icon": "https://kilo.ai/favicon.ico",
+    "maxConcurrency": 2
+  }
+}
